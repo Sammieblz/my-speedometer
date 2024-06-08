@@ -1,11 +1,12 @@
-import React, { useState } from 'react';
-import Speedometer from './Speedometer';
+import React from 'react';
+import Speedometer from './components/speedometer';
 
-
-function Speedometer() {
-  const [speed, setSpeed] = useState(0);
-
-  return <h1>{speed}</h1>;
+function App() {
+  return (
+    <div>
+      <Speedometer />
+    </div>
+  );
 }
 
-export default Speedometer;
+export default App;
